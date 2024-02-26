@@ -1,5 +1,4 @@
-(ns problems
-  (:require [hato.client :as hato]))
+(ns problems)
 
 ;; Demonstrate your ability to manipulate Clojure data structures.
 ;; In each "comment" block, replace "TODO" with Clojure code
@@ -10,10 +9,7 @@
 ;; Shapes of the results we are looking for are provided.
 
 ;; Sample YU-GI-OH cards data:
-(def all-cards
-  (get-in
-   (hato/get "https://db.ygoprodeck.com/api/v7/cardinfo.php" {:as :json})
-   [:body :data]))
+(def all-cards (read-string (slurp "yugioh-cards.edn")))
 
 (comment
   ;; Example problem with solution
