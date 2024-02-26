@@ -88,7 +88,7 @@
   ;; (where each card's price is the average price from all markets),
   ;; sorting from highest average card price set.
   ;; Hint:
-  ;; 1. Account for the fact that one card may be in different set.
+  ;; 1. Account for the fact that one card may appear in more than one sets.
   ;; 2. `mapcat` helps expand one element into many, e.g.
   ;; (mapcat identity [[1] [1 2]]) => [1 1 2]
   ;; 3. `group-by` groups elements of a sequence into different group.
